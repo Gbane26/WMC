@@ -2157,12 +2157,13 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #22c6ab;
-  border-color: #22c6ab; }
+  background-color: #ffa000;
+  border-color: #ff9b18; }
   .btn-success:hover {
     color: #fff;
-    background-color: #1ca58f;
-    border-color: #1b9a85; }
+    background-color: #fdfdfd;
+    color: black;
+    border-color: #ffba24; }
   .btn-success:focus, .btn-success.focus {
     box-shadow: 0 0 0 0.2rem rgba(34, 198, 171, 0.5); }
   .btn-success.disabled, .btn-success:disabled {
@@ -8866,6 +8867,8 @@ html body .waves-notransition {
   font-size: 10px; }
 
 .btn-rounded {
+  background-color: #ffa000;
+  border-color: #ff9b18;
   border-radius: 60px;
   padding: 7px 18px; }
   .btn-rounded.btn-lg, .btn-group-lg > .btn-rounded.btn {
