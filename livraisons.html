@@ -11,8 +11,7 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
     <title>AdminBite admin Template - The Ultimate Multipurpose admin template</title>
-    <!-- This page plugin CSS -->
-    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- This page css -->
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -523,8 +522,10 @@
                             <!-- End User Profile-->
                         </li>
                         <!-- User Profile-->
-                        
-                        
+                        <li class="nav-small-cap">
+                            <i class="mdi mdi-dots-horizontal"></i>
+                            <span class="hide-menu">Personal</span>
+                        </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-calendar.html
                                    " aria-expanded="false">
@@ -539,20 +540,82 @@
                                 <span class="hide-menu">Taskboard</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="ui-card-customs.html
-                                   " aria-expanded="false">
-                                <i class="mdi mdi-directions"></i>
-                                <span class="hide-menu">Card-customs</span>
-                            </a>
+
+                        <li class="nav-small-cap">
+                            <i class="mdi mdi-dots-horizontal"></i>
+                            <span class="hide-menu">Apps</span>
                         </li>
+                        
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="list-clients.html
-                                   " aria-expanded="false">
-                                <i class="mdi mdi-directions"></i>
-                                <span class="hide-menu">Liste des clients</span>
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="icon-Ticket"></i>
+                                <span class="hide-menu">Gestion de Stock </span>
                             </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="niveau-de-stock.html" class="sidebar-link">
+                                        <i class="mdi mdi-email"></i>
+                                        <span class="hide-menu"> Niveau de Stock </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="ordre-dachat.html" class="sidebar-link">
+                                        <i class="mdi mdi-email-alert"></i>
+                                        <span class="hide-menu"> Ordre d'achat </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="livraisons.html" class="sidebar-link">
+                                        <i class="mdi mdi-email-secure"></i>
+                                        <span class="hide-menu"> Livraisons </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="entree-de-stock.html" class="sidebar-link">
+                                        <i class="mdi mdi-email-secure"></i>
+                                        <span class="hide-menu"> Entree de Stock </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="sortie-de-stock.html" class="sidebar-link">
+                                        <i class="mdi mdi-email-secure"></i>
+                                        <span class="hide-menu"> Sortie de Stock </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="mouvement-de-stock.html" class="sidebar-link">
+                                        <i class="mdi mdi-email-secure"></i>
+                                        <span class="hide-menu"> Mouvement de Stock </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="reaprovisionnement.html" class="sidebar-link">
+                                        <i class="mdi mdi-email-secure"></i>
+                                        <span class="hide-menu"> Seuil de reaprovisionnement </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="registre-des-stocks.html" class="sidebar-link">
+                                        <i class="mdi mdi-email-secure"></i>
+                                        <span class="hide-menu"> Registre des Stocks </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="inventaires.html" class="sidebar-link">
+                                        <i class="mdi mdi-email-secure"></i>
+                                        <span class="hide-menu"> Mise a jour des inventaires </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -567,25 +630,32 @@
         <!-- ============================================================== -->
         <div class="page-wrapper">
             <!-- ============================================================== -->
-            <!-- Bread crumb and right sidebar toggle -->
+            <!-- Grand Titre -->
             <!-- ============================================================== -->
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">Basic Initialisation</h4>
+                        <h4 class="page-title">Livraisons</h4>
                         <div class="d-flex align-items-center">
 
                         </div>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex no-block justify-content-end align-items-center">
-                           
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- End Grand Titre -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
             <!-- Container fluid  -->
@@ -599,19 +669,34 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Zero Configuration</h4>
-                                <h6 class="card-subtitle">DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function:<code> $().DataTable();</code>. You can refer full documentation from here <a href="https://datatables.net/">Datatables</a></h6>
+                                <h4 class="card-title">
+                                    <button class="btn btn-warning" type="submit">Tout</button>
+                                    <button class="btn btn-warning" type="submit">Nouvel Onglet</button>
+                                </h4>
+                                <div class="col-12 align-self-center">
+                                    <div class="d-flex no-block justify-content-end align-items-center">
+                                    <!-- Column -->
+                                    <div class="card-title">
+                                        <button class="btn btn-warning" type="submit">Afficher/Masquer les filtres</button>
+                                        <button class="btn btn-warning" type="submit">Reinitialiser </button>
+                                    </div>
+                                    <!-- Column -->
+                                    </div>
+                                </div>
+                                
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered">
                                         <thead>
                                             <tr>
                                                 <th> </th>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>Livraisons #</th>
+                                                <th>Fournisseur</th>
+                                                <th>Lieu de stockage</th>
+                                                <th>Date</th>
+                                                <th>Date de livraison</th>
+                                                <th>Quantite totale</th>
+                                                <th>Total</th>
+                                                <th>Statut</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -622,13 +707,16 @@
                                                         <label class="custom-control-label" for="customControlValidation2"></label>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-taskboard.html">Airi Satou</a></td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>33</td>
-                                                <td>2008/11/28</td>
-                                                <td>$162,700</td>
+                                                <td><a href="ticket-detail.html" class="font-medium link">#PO0000001</a></td>
+                                                <td class="font-bold link">The Smooth Brothers </td>
+                                                <td>Emplacement principal</td>
+                                                <td>15 juin 2020 </td>
+                                                <td>15 juin 2020</td>
+                                                <td>183</td>
+                                                <td>0.00 (XOF)</td>
+                                                <td><span class="label label-success">Livré </span></td>
                                             </tr>
+                                            
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
@@ -636,12 +724,14 @@
                                                         <label class="custom-control-label" for="customControlValidation3"></label>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-taskboard.html">Airi Satou</a></td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>33</td>
-                                                <td>2008/11/28</td>
-                                                <td>$162,700</td>
+                                                <td><a href="ticket-detail.html" class="font-medium link">#PO0000001</a></td>
+                                                <td class="font-bold link">The Smooth Brothers </td>
+                                                <td>Emplacement principal</td>
+                                                <td>15 juin 2020 </td>
+                                                <td>15 juin 2020</td>
+                                                <td>183</td>
+                                                <td>0.00 (XOF)</td>
+                                                <td><span class="label label-success">Livré</span></td>
                                             </tr>
                                             <tr>
                                                 <td>
@@ -650,41 +740,52 @@
                                                         <label class="custom-control-label" for="customControlValidation4"></label>
                                                     </div>
                                                 </td>
-                                                <td><a href="app-taskboard.html">Airi Satou</a></td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>33</td>
-                                                <td>2008/11/28</td>
-                                                <td>$162,700</td>
+                                                <td><a href="ticket-detail.html" class="font-medium link">#PO0000001</a></td>
+                                                <td class="font-bold link">The Smooth Brothers </td>
+                                                <td>Emplacement principal</td>
+                                                <td>15 juin 2020 </td>
+                                                <td>15 juin 2020</td>
+                                                <td>183</td>
+                                                <td>0.00 (XOF)</td>
+                                                <td><span class="label label-success">Livré</span></td>
                                             </tr>
-                                        </tbody>
-                                        <tfoot>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customControlValidation5" required>
+                                                        <label class="custom-control-label" for="customControlValidation5"></label>
+                                                    </div>
+                                                </td>
+                                                <td><a href="ticket-detail.html" class="font-medium link">#PO0000001</a></td>
+                                                <td class="font-bold link">The Smooth Brothers </td>
+                                                <td>Emplacement principal</td>
+                                                <td>15 juin 2020 </td>
+                                                <td>15 juin 2020</td>
+                                                <td>183</td>
+                                                <td>0.00 (XOF)</td>
+                                                <td><span class="label label-success">Livré</span></td>
                                             </tr>
-                                        </tfoot>
+                                            
+                                        </tbody>
                                     </table>
+                                    <ul class="pagination float-right">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -693,8 +794,8 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-       All Rights Reserved by AdminBite admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
-</footer>
+                   All Rights Reserved by Xtreme admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+            </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -798,54 +899,54 @@
                             <div class="message-center chat-scroll">
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_1' data-user-id='1'>
                                     <span class="user-img"> <img src="assets/images/users/1.jpg" alt="user" class="rounded-circle"> <span class="profile-status online pull-right"></span> </span>
-                                    <span class="mail-contnet">
-                                        <h5 class="message-title">Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </span>
+                                    <div class="mail-contnet">
+                                        <h5 class="message-title">Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_2' data-user-id='2'>
                                     <span class="user-img"> <img src="assets/images/users/2.jpg" alt="user" class="rounded-circle"> <span class="profile-status busy pull-right"></span> </span>
-                                    <span class="mail-contnet">
-                                        <h5 class="message-title">Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </span>
+                                    <div class="mail-contnet">
+                                        <h5 class="message-title">Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_3' data-user-id='3'>
                                     <span class="user-img"> <img src="assets/images/users/3.jpg" alt="user" class="rounded-circle"> <span class="profile-status away pull-right"></span> </span>
-                                    <span class="mail-contnet">
-                                        <h5 class="message-title">Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </span>
+                                    <div class="mail-contnet">
+                                        <h5 class="message-title">Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_4' data-user-id='4'>
                                     <span class="user-img"> <img src="assets/images/users/4.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                    <span class="mail-contnet">
-                                        <h5 class="message-title">Nirav Joshi</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </span>
+                                    <div class="mail-contnet">
+                                        <h5 class="message-title">Nirav Joshi</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_5' data-user-id='5'>
                                     <span class="user-img"> <img src="assets/images/users/5.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                    <span class="mail-contnet">
-                                        <h5 class="message-title">Sunil Joshi</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </span>
+                                    <div class="mail-contnet">
+                                        <h5 class="message-title">Sunil Joshi</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_6' data-user-id='6'>
                                     <span class="user-img"> <img src="assets/images/users/6.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                    <span class="mail-contnet">
-                                        <h5 class="message-title">Akshay Kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </span>
+                                    <div class="mail-contnet">
+                                        <h5 class="message-title">Akshay Kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_7' data-user-id='7'>
                                     <span class="user-img"> <img src="assets/images/users/7.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                    <span class="mail-contnet">
-                                        <h5 class="message-title">Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </span>
+                                    <div class="mail-contnet">
+                                        <h5 class="message-title">Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <!-- Message -->
                                 <a href="javascript:void(0)" class="message-item" id='chat_user_8' data-user-id='8'>
                                     <span class="user-img"> <img src="assets/images/users/8.jpg" alt="user" class="rounded-circle"> <span class="profile-status offline pull-right"></span> </span>
-                                    <span class="mail-contnet">
-                                        <h5 class="message-title">Varun Dhavan</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </span>
+                                    <div class="mail-contnet">
+                                        <h5 class="message-title">Varun Dhavan</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                             </div>
@@ -924,6 +1025,8 @@
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/extra-libs/taskboard/js/jquery.ui.touch-punch-improved.js"></script>
+    <script src="assets/extra-libs/taskboard/js/jquery-ui.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -940,9 +1043,7 @@
     <script src="dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="dist/js/custom.min.js"></script>
-    <!--This page plugins -->
-    <script src="assets/extra-libs/DataTables/datatables.min.js"></script>
-    <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
+    <!--This page JavaScript -->
 </body>
 
 </html>
